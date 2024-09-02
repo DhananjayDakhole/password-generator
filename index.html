@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <h2>Password Generator</h2>
+            <div class="row inputBox">
+                <div class="left">
+                    <span id="pass-box"></span>
+                </div>
+                <div class="right">
+                    <span class="material-icons" id="copyIcon">content_copy</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="range" name="" id="total-char" step="1" max="30" min="4" value="8" />
+            </div>
+
+            <div class="row">
+                <div class="left">Password Length</div>
+                <div class="right">
+                    <span class="sliderValue" id="sliderValue"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="upper-case">
+                    <div class="left">
+                        Include Uppercase (A-Z)
+                    </div>
+                </label>
+                <div class="right">
+                    <label class="switch">
+                        <input type="checkbox" id="upper-case" checked />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="lower-case">
+                    <div class="left">
+                        Include Lowercase (a-z)
+                    </div>
+                </label>
+                <div class="right">
+                    <label class="switch">
+                        <input type="checkbox" id="lower-case" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="numbers">
+                    <div class="left">
+                        Include Numbers (0-9)
+                    </div>
+                </label>
+                <div class="right">
+                    <label class="switch">
+                        <input type="checkbox" id="numbers" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="symbols">
+                    <div class="left">
+                        Include Symbols
+                    </div>
+                </label>
+                <div class="right">
+                    <label class="switch">
+                        <input type="checkbox" id="symbols" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="generate" id="btn">
+                Generate Password
+            </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
